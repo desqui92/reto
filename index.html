@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+    <main class="wrapper">
         <section class="c-section-one c-section-one--color_blue">
-            <h1 class="c-section-one__title">Gradie</h1>
-            <h2 class="c-section-one__subtitle c-section-one__subtitle--color_cyan">Beautiful gradients in seconds.</h2>
+            <!-- header  -->
+            <div class="c-section-one__header">
+                <h1 class="c-section-one__title">Gradie</h1>
+                <h2 class="c-section-one__subtitle c-section-one__subtitle--color_cyan">Beautiful gradients in seconds.</h2>
+            </div>
+    
+            <!-- picture -->
+            <div class="c-section-one__picture">
+                <img src="" alt="">
+            </div>
+    
         </section>
+        
         <section class="c-secion__two">
+    
             <form class="c-form">
+                <!-- title form  -->
                 <h1 class="c-form__title"></h1>
-                <label class="c-form__label" for="email">Email</label>
-                <input class="c-form__input" id="email" name="email" type="email">
-                <label class="c-form__label" for="password">Password</label>
-                <input class="c-form__input" id="password" name="password" type="password">
-                <input class="c-form__checkbox" type="checkbox">
-                <p class="c-form__paragraph ">By creating an account, you agree to the <b class="c-form__bold c-form__bold--color_blue">Terms & Conditions</b></p>
-                <input class="c-form__submit c-form__submit--color_blue" type="submit">
+    
+                <!-- user data  -->
+                <div class="c-form__data">
+                    <label class="c-form__label" for="email">Email</label>
+                    <input class="c-form__input" id="email" name="email" type="email">
+    
+                    <label class="c-form__label" for="password">Password</label>
+                    <input class="c-form__input" id="password" name="password" type="password">
+                </div>
+    
+                <!-- terms  -->
+                <div class="c-form__terms">
+                    <input class="c-form__checkbox" type="checkbox">
+                    <p class="c-form__paragraph ">By creating an account, you agree to the <b
+                            class="c-form__bold c-form__bold--color_blue">Terms & Conditions</b></p>
+                </div>
+    
+                <div class="c-form__submit">
+                    <input class="c-form__submit c-form__submit--color_blue" type="submit">
+                </div>
             </form>
         </section>
-    </body>
+    </main>
+</body>
 </html>
