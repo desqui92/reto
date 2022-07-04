@@ -1,4 +1,5 @@
-.sass-cache
-css/*.map
-sass/
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
 # 1
