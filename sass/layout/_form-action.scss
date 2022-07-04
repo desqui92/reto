@@ -62,6 +62,12 @@
                 width: 100%;
                 padding: 1rem;
                 border-radius: .2rem;
+                transition: background 150ms ease-in-out;
+                cursor: pointer;
+
+                &:hover{
+                    background:rgb(11, 68, 87);
+                }
             }
         }
     }
