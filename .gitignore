@@ -1,6 +1,3 @@
-#ignorar cache
-*.sass-cache
-#ignorar map
+.sass-cache
 css/*.map
-#ignorar sass
-/sass
+sass
