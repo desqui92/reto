@@ -23,13 +23,16 @@
                 font-weight: 700;
                 margin-bottom: .5rem;
             }
-            > input {
-                // background: gray;
+            input {
                 width: 100%;
                 padding: .8rem;
                 border: 1px solid #ccc;
                 border-radius: .2rem;
                 margin-bottom: 1.5rem;
+
+                &:focus{
+                    outline-color: $color_cyan;
+                }
             }
         }
 
@@ -40,14 +43,13 @@
             input {
                 margin-right: .5rem;
                 display: inline;
-                background: red;
             }
 
             p {
-                font-weight: 500;
                 font-size: 1.1rem;
 
                 a{
+                    font-size: 1.1rem;
                     color: $color_blue;
                     font-weight: 700;
                     text-decoration: underline;
@@ -57,11 +59,12 @@
 
         &__submit {
             &_btn {
-                background: $color_blue;
-                color: $color_white;
                 width: 100%;
                 padding: 1rem;
                 border-radius: .2rem;
+                background: $color_blue;
+                color: $color_white;
+                font-weight: 500;
                 transition: background 150ms ease-in-out;
                 cursor: pointer;
 
