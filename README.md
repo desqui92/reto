@@ -1,1 +1,1 @@
-<img src="img/preview.png" style="width:100%; height:auto;">
+<img src="images/preview.png" style="width:100%; height:auto;">
