@@ -1,1 +1,217 @@
-@charset "UTF-8";*{margin:0;padding:0;border:0;-webkit-box-sizing:border-box;box-sizing:border-box;vertical-align:baseline}figure,iframe,img,picture,video{max-width:100%;width:100%;display:block;-o-object-fit:cover;object-fit:cover;-o-object-position:center center;object-position:center center}a{display:block;text-decoration:none;color:inherit;font-size:inherit}p a{display:inline}li{list-style-type:none}html{scroll-behavior:smooth}a,b,blockquote,em,h1,h2,h3,h4,h5,h6,i,p,span,strong,u{font-size:1em;font-weight:inherit;font-style:inherit;text-decoration:none;color:inherit}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}::-moz-selection{background-color:var(--negro);color:var(--blanco)}::selection{background-color:var(--negro);color:var(--blanco)}button,form,input,label,select,textarea{font-family:inherit;font-size:inherit;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;background-color:transparent;color:inherit;display:block}table,td,tr{border-collapse:collapse;border-spacing:0}svg{width:100%;display:block;fill:currentColor}body{min-height:100vh;font-size:100%;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;color:var(--negro);line-height:1.4em;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;font-smooth:always;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.wrapper{background-image:url(/images/Background.png);min-height:100vh;width:100%;background-repeat:no-repeat;background-size:cover;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.wrapper .grid{max-width:30rem;margin:auto;display:-ms-grid;display:grid;-ms-grid-rows:1fr 1fr;grid-template-rows:1fr 1fr;overflow:hidden}@media (min-width:768px){.wrapper .grid{max-width:50rem;border-radius:0.5rem;-ms-grid-columns:1fr 1fr;grid-template-columns:1fr 1fr;-ms-grid-rows:1fr;grid-template-rows:1fr}.wrapper .grid>:first-child{-ms-grid-row:1;-ms-grid-column:1}.wrapper .grid>:nth-child(2){-ms-grid-row:1;-ms-grid-column:2}}.c-section__two{background:white;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.c-section__two .c-form{padding-block:2.5rem;width:80%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:unset;-ms-flex-align:unset;align-items:unset}@media (min-width:768px){.c-section__two .c-form{width:70%}}.c-section__two .c-form__title{font-size:2rem;font-weight:bold;margin-bottom:2rem}.c-section__two .c-form__data label{font-weight:700;margin-bottom:0.5rem}.c-section__two .c-form__data input{width:100%;padding:0.8rem;border:1px solid #ccc;border-radius:0.2rem;margin-bottom:1.5rem}.c-section__two .c-form__data input:focus{outline-color:rgb(74,126,145)}.c-section__two .c-form__terms{margin-bottom:2rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline}.c-section__two .c-form__terms input{margin-right:0.5rem;display:inline}.c-section__two .c-form__terms p{font-size:1.1rem}.c-section__two .c-form__terms p a{font-size:1.1rem;color:rgb(1,50,67);font-weight:700;text-decoration:underline}.c-section__two .c-form__submit_btn{width:100%;padding:1rem;border-radius:0.2rem;background:rgb(1,50,67);color:white;font-weight:500;-webkit-transition:background 150ms ease-in-out;transition:background 150ms ease-in-out;cursor:pointer}.c-section__two .c-form__submit_btn:hover{background:rgb(11,68,87)}.c-section-one{background:rgb(1,50,67);background-image:url("/images/Phone-illustration.png");background-repeat:no-repeat;background-position:center;background-size:auto 100%;color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.c-section-one__header{text-align:center;padding-top:2.5rem}.c-section-one__title{font-size:2rem;font-weight:700;margin-bottom:1rem}.c-section-one__subtitle{font-size:1.1rem;font-weight:500;color:rgb(74,126,145)}
+@charset "UTF-8";
+/*@import 'vendors/tailwin';*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline; }
+
+/* Evitamos problemas con las imagenes */
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* opcional */
+  object-fit: cover;
+  /* opcional */
+  object-position: center center; }
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit; }
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline; }
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none; }
+
+/* Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth; }
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit; }
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* Configuramos el texto que seleccionamos */
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco); }
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block; }
+
+/* Reseteamos las tablas */
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor; }
+
+/* (Probándolo, no usar en producción) En el caso de añadir una  */
+/* p svg{
+  display: inline;
+  width: initial;
+} */
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--negro);
+  /* opcional */
+  line-height: 1.4em;
+  /* opcional */
+  hyphens: auto;
+  /* opcional */
+  font-smooth: always;
+  /* opcional */
+  -webkit-font-smoothing: antialiased;
+  /* opcional */
+  -moz-osx-font-smoothing: grayscale; }
+
+.c-body {
+  background-image: url("../images/Background.png");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.c-grid {
+  max-width: 30rem;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .c-grid {
+      max-width: 50rem;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr; } }
+  @media (max-width: 600px) {
+    .c-grid {
+      max-width: 100%; } }
+
+.c-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  /*----- INICIO DE SECCION UNO O IZQUIERDA -----*/
+  /*----- FIN DE SECCION UNO O IZQUIERDA -----*/
+  /*----- INICIO DE SECCION DOS O DERECHA -----*/ }
+  .c-section--bgcolor-blue {
+    border-radius: 0.5rem 0 0 0.5rem;
+    background: #013243;
+    color: #fff;
+    text-align: center; }
+  .c-section__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem; }
+  .c-section__subtitle {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #4a7e91; }
+  .c-section__picture {
+    margin-top: -6rem; }
+  .c-section--bgcolor-white {
+    border: 1px solid #b5b5b5;
+    border-radius: 0 0.5rem 0.5rem 0;
+    background: white; }
+  @media (max-width: 600px) {
+    .c-section--bgcolor-blue, .c-section--bgcolor-white {
+      border: none;
+      border-radius: 0; } }
+  .c-section .c-form {
+    width: 80%;
+    height: 100%;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; }
+    @media (min-width: 768px) {
+      .c-section .c-form {
+        width: 70%; } }
+    .c-section .c-form__title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 2rem; }
+    .c-section .c-form__label {
+      font-weight: 700;
+      margin-bottom: .5rem; }
+    .c-section .c-form__input {
+      width: 100%;
+      padding: .8rem;
+      border: 1px solid #ccc;
+      border-radius: .2rem;
+      margin-bottom: 1.5rem; }
+      .c-section .c-form__input:focus {
+        outline-color: #4a7e91; }
+    .c-section .c-form__terms {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+    .c-section .c-form__checkbox {
+      margin-right: .5rem;
+      display: inline-block;
+      width: 2rem;
+      height: 2rem; }
+    .c-section .c-form__paragraph {
+      font-size: 1.1rem; }
+      .c-section .c-form__paragraph a {
+        font-size: 1.1rem;
+        color: #013243;
+        font-weight: 700;
+        text-decoration: underline; }
+    .c-section .c-form__submit_btn {
+      width: 100%;
+      padding: 1rem;
+      border-radius: .2rem;
+      background: #013243;
+      color: white;
+      font-weight: 500;
+      transition: background 150ms ease-in-out;
+      cursor: pointer; }
+      .c-section .c-form__submit_btn:hover {
+        background: #0b4457; }
+
+/*----- FIN DE SECCION DOS O DERECHA -----*/
+/*@import 'themes/theme';
+@import 'themes/admin';
+*/
+
+/*# sourceMappingURL=main.css.map */

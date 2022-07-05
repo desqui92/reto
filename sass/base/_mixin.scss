@@ -5,7 +5,7 @@
     align-items: $align;
 }
   @mixin screen-sm {
-    @media (min-width: 600px) { @content; }
+    @media (max-width: 600px) { @content; }
   }
   @mixin screen-md {
     @media (min-width: 768px) { @content; }
